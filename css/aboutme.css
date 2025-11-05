@@ -1,0 +1,431 @@
+@import url('https://fonts.cdnfonts.com/css/agbalumo');
+
+                
+/* navbar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+html {
+    font-size: 65%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: lightgray;
+    color: white;
+}
+
+header {
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: skyblue;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    padding-left: 30px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover,nav a.active {
+    color: skyblue;
+    border-bottom: 3px solid skyblue;
+}
+
+/* section 1 */
+
+section { 
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+ 
+.mypic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.mypic .mypic-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+
+.mypic-content .nn {
+    color: skyblue;
+    font-family: 'Agbalumo', sans-serif;                                                             
+}
+
+.mypic-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.mypic-content p {
+    font-size: 2rem;
+    line-height: 5vh;
+}
+
+.mypic-content ul li {
+    font-size: 2rem;
+}
+
+.mypic-img {
+    border-radius: 10%;
+    max-width: auto;
+    border: 4px solid skyblue;
+    box-shadow: 0 0 10px skyblue;
+    max-height: 100vh;
+    margin-top: 7%;
+    
+}
+
+.mypic-img img {
+    position: relative;
+    width: 25vw;
+    border-radius: 10%;
+    box-shadow: 0 0 25px solid skyblue;
+    cursor: pointer;
+    transition: 0.2 linear;
+}
+
+.mypic-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+
+
+/* icons */
+
+.s-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid skyblue;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 2rem 4px 2rem;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.s-icon a:hover {
+    color: blue;
+    transform: scale(1.3);
+    background-color: skyblue;
+    box-shadow: 0 0 25px skyblue;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.6rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: skyblue;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid skyblue;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: skyblue;
+    color: black;
+    box-shadow: 0 0 25px skyblue;
+}
+
+/* Typing text */
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "Web developer";
+    color: skyblue;
+    animation: words 10s infinite;
+}
+
+.typing-text span:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6 infinite;
+}
+@keyframes cursor {
+    to{border-left: 3px solid skyblue;}
+}
+@keyframes words {
+    0%, 20%{content: "Chess Player!";}
+    21%, 40%{content: "Software Developer!";}
+    41%, 60%{content: "Freelancer!";}
+    61%, 80%{content: "Web Developer!";}
+    81%, 100%{content: "COC Gamer!";}
+}
+
+.span-p {
+    color: lightgreen;
+}
+
+
+
+/* section 2 */
+
+.sec-2 { 
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    background: linear-gradient(black, #444);
+    margin-top: 1px;
+}
+ 
+.me-pics{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8rem;
+    flex: wrap;
+
+    
+}
+
+.c-pic img {
+    position: relative;
+    width: 25vw;
+    border-radius: 10%;
+    box-shadow: 0 0 25px solid skyblue;
+    cursor: pointer;
+    transition: 0.2 linear;
+}
+
+.c-pic img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.me-pics img {
+    max-width: auto;
+    border: 4px solid skyblue;
+    box-shadow: 0 0 10px skyblue;
+    max-height: 100vh;
+    margin-top: 7%;
+}
+
+.about h1 {
+    font-size: 4rem;
+    margin-bottom: 10%;
+    color: skyblue;
+}
+
+.me-content ul li {
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+/* progress bar */
+
+.sec-3 {
+    background: linear-gradient(#444, black);
+    margin-top: 1px;
+}
+
+.sec-3 h1 {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: skyblue;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.skills h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 30px;
+    
+}
+
+.progress-bar {
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+   
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.html {
+    background: #e91e63;
+    animation: html 1.5s linear forwards;
+}
+
+.css {
+    background: #00bcd4;
+    animation: css 1.5s linear forwards;
+}
+
+.javascript {
+    background: #cddc39;
+    animation: javascript 1.5s linear forwards;
+}
+
+.python {
+    background: #9c27;
+    animation: python 1.5s linear forwards;
+}
+
+/* for span */
+
+.html span{
+    border: 1px solid #e91e63;
+}
+
+.css span {
+    border: 1px solid #00bcd4;
+}
+
+.javascript span {
+    border: 1px solid #cddc39;;
+}
+
+.python span {
+    border: 1px solid #9c27;
+}
+
+@keyframes html {
+    100%{width: 84%;}
+}
+@keyframes css {
+    100%{width: 60%;}
+}
+@keyframes javascript {
+    100%{width: 20%;}
+}
+@keyframes python {
+    100%{width: 92%;}
+}
+
+/* .mypic .mypic-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+} */ 
+
+
+
+/* section footer */
+
+.contacts {
+    display: flex;
+    padding: 1.5px;
+    padding-bottom: 1.5px;
+    margin: 0;
+    color: white;
+    justify-content: center;
+    
+}
+
+.info {
+    font-size: 1.3rem;
+    color: black;
+    align-items: center;
+}
+
+.info ul {
+    list-style: none;
+
+}
+
+.info li h1 {
+    text-indent: 25%;
+}
+
+
+
+
+
+

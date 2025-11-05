@@ -1,0 +1,67 @@
+body {
+    background-image: url(../img/madongan\ dam.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 200vh;
+
+}
+
+.navbar {
+    position: relative;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a{
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent skyblue;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: skyblue;
+    border-bottom: 3px solid skyblue;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    margin: 0;
+    color: black;
+    font-size: x-large;
+    
+
+}
+
+
+
+.letters {
+    text-align: center;
+    padding: 7px;
+}
+
+.letters h1 {
+    font-weight: 900;
+
+}
+
+.letters2 {
+    background: lightyellow;
+    width: 500px;
+    font-size: x-large;
+    padding: 30px;
+    margin-left: 80px;
+    text-align: center;
+}
